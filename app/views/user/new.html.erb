@@ -12,12 +12,25 @@
   <input type="hidden" name="authenticity_token" value="form_authenticity_token">
 </form> %>
 
+<%#
+ <%= form_tag("/user", method: "post") do > 
+  <%= label_tag(:username, "username:") >
+  <%= text_field_tag(:username) >
+  <%= label_tag(:email, "email:") >
+  <%= email_field_tag(:email) >
+  <%= label_tag(:password, "password:") >
+  <%= password_field_tag(:password) >
+  <%= submit_tag("Submit") >
+<% end %> 
 
-<%= form_tag("/user", method: "post") do %>
+<p> 2nd User Form </p>
+
+<%= form_with(url: "/user", method: "post") do %>
+
   <%= label_tag(:username, "username:") %>
-  <%= text_field_tag(:username) %>
+  <%= text_field_tag(:username, 'enter the username here')%>
   <%= label_tag(:email, "email:") %>
-  <%= email_field_tag(:email) %>
+  <%= email_field_tag(:email, 'youremail@youremail.com')%>
   <%= label_tag(:password, "password:") %>
   <%= password_field_tag(:password) %>
   <%= submit_tag("Submit") %>
