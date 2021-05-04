@@ -1,0 +1,22 @@
+
+
+<%= form_with model: @user do |form| %>
+  <div>
+    <%= form.label :username%><br>
+    <%= form.text_field :username, 'enter the username here' %>
+  </div>
+
+  <div>
+    <%= form.label :email %><br>
+    <%= form.email_field :email, 'youremail@youremail.com' %>
+  </div>
+
+   <div>
+    <%= form.label :password %><br>
+    <%= form.password_field :password, 'youremail@youremail.com' %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
