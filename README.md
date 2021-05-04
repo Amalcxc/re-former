@@ -14,7 +14,7 @@
 
 ### Setup
 
-- open terminsl in your computer
+- open terminal in your computer
 - run 'git clone https://github.com/Amalcxc/re-former.git'
 - cd re-former
 - type "bundler install"
