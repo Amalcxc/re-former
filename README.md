@@ -14,9 +14,11 @@
 
 ### Setup
 
-- Install Rails on your computer
-- Clone the repository to a local file
-- Type rails server on your terminal or command line
+- open terminsl in your computer
+- run 'git clone https://github.com/Amalcxc/re-former.git'
+- cd re-former
+- type "bundler install"
+- rails s
 
 ### How to use it
 
@@ -24,10 +26,6 @@
 - To add new users click on the add user link, this will open a form and just enter the information and click add a new user.
 - To see the new users added click on the User list link.
 - To modify a user click on their name, this will display a form with that user information, modify what you need and click the Edit button, this will take you back to the user list.
-
-### Install
-
-- run "bundler install" on your terminal to get all necessary gems working.
 
 ### Build With
 
