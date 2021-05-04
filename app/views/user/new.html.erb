@@ -23,26 +23,29 @@
   <%= submit_tag("Submit") >
 <% end %> 
 
-<p> 1nd User Form </p>
+<p> Add User Form </p>
 
 
-<%= form_with model: @user do |form| %>
+<%= form_with model:@user, url: "/user", method: "post" do |form| %>
   <div>
-    <%= form.label :username%><br>
-    <%= form.text_field :username, 'enter the username here' %>
+    <%= form.label :username %><br>
+    <%= form.text_field :username %>
   </div>
-
+  <br>
   <div>
     <%= form.label :email %><br>
-    <%= form.email_field :email, 'youremail@youremail.com' %>
+    <%= form.email_field :email %>
   </div>
-
+  <br>
    <div>
     <%= form.label :password %><br>
-    <%= form.password_field :password, 'youremail@youremail.com' %>
+    <%= form.password_field :password %>
   </div>
-
+  <br>
   <div>
     <%= form.submit %>
   </div>
 <% end %>
+
+<br><br>
+<%= link_to "User list", root_path %>

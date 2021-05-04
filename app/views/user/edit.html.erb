@@ -1,22 +1,33 @@
 
+<p> Edit User Form </p>
 
-<%= form_with model: @user do |form| %>
+
+<%= form_with model:@user, url: user_path, method: :patch do |form| %>
   <div>
-    <%= form.label :username%><br>
-    <%= form.text_field :username, 'enter the username here' %>
+    <%= form.label :username %><br>
+    <%= form.text_field :username, :value => @user.username %>
+    <% @user.errors.full_messages_for(:username).each do |message| %>
+      <div><%= message %></div>
+      <% end %>
   </div>
-
+  <br>
   <div>
     <%= form.label :email %><br>
-    <%= form.email_field :email, 'youremail@youremail.com' %>
+    <%= form.email_field :email, :value => @user.email %>
+    <% @user.errors.full_messages_for(:email).each do |message| %>
+      <div><%= message %></div>
+      <% end %>
   </div>
-
+  <br>
    <div>
     <%= form.label :password %><br>
-    <%= form.password_field :password, 'youremail@youremail.com' %>
+    <%= form.password_field :password, :value => @user.password %>
   </div>
-
+  <br>
   <div>
-    <%= form.submit %>
+    <%= form.submit "Edit" %>
   </div>
 <% end %>
+
+<br><br>
+<%= link_to "User list", root_path %>

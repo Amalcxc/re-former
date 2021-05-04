@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root "user#new"
+  root "user#index"
+  
   resources :user 
-
 end
