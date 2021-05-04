@@ -3,22 +3,31 @@
 
 ### Re-former
 
-## These projects we build some forms, using nearly-pure HTML and using the helper methods that Rails provides.
+## In These projects we build some forms, using nearly-pure HTML and using the helper methods that Rails provide.
 
 
 ### Prerequisites
 
-- Windows, Mac or Linux machine 
+- Windows, Mac, or Linux machine 
 
 - Web browser other than Internet Explorer
 
 ### Setup
 
-- Rails server
+- Install Rails on your computer
+- Clone the repository to a local file
+- Type rails server on your terminal or command line
+
+### How to use it
+
+- Once open the first page will show all the users on the database (empty if its the first time)
+- To add new users click on the add user link, this will open a form and just enter the information and click add a new user.
+- To see the new users added click on the User list link.
+- To modify a user click on their name, this will display a form with that user information, modify what you need and click the Edit button, this will take you back to the user list.
 
 ### Install
 
-- bundler install
+- run "bundler install" on your terminal to get all necessary gems working.
 
 ### Build With
 

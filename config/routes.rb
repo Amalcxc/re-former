@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
   root "user#index"
   
-  resources :user 
+  resources :user, only: [:new, :create, :edit, :update]
 end
