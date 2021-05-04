@@ -26,8 +26,6 @@
 - Rails
 - SQL
 
-
-​
 ### You can deploy this project forking it on GitHub and then going to:
 
 - Repository
@@ -39,9 +37,7 @@
 - Save
 
 ​
-
 👤 **Authors**
-
 
 
 👤 **Jose Alberto Arriaga Ramos**

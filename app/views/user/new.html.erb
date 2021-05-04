@@ -29,21 +29,21 @@
 <%= form_with model:@user, url: "/user", method: "post" do |form| %>
   <div>
     <%= form.label :username %><br>
-    <%= form.text_field :username %>
+    <%= form.text_field :username, placeholder: 'Username' %>
   </div>
   <br>
   <div>
     <%= form.label :email %><br>
-    <%= form.email_field :email %>
+    <%= form.email_field :email, placeholder: 'Email' %>
   </div>
   <br>
    <div>
     <%= form.label :password %><br>
-    <%= form.password_field :password %>
+    <%= form.password_field :password, placeholder: 'password' %>
   </div>
   <br>
   <div>
-    <%= form.submit %>
+    <%= form.submit 'Add new user'%>
   </div>
 <% end %>
 
